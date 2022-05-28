@@ -72,6 +72,7 @@ h1.flip-out p {
   } 
   h2{
     text-align: center;
+    font: bold;
     font-size: medium;
     color: rgb(255, 255, 255);
   }

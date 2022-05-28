@@ -1,0 +1,61 @@
+/*Mark's comment: You don't need to nest this in a style tag so delete lines 1 and 77. The web browser will read the .html page line by line, get to the link tag and then include this file, continuing reading line by line, so including a style tag is sort of like putting a tag within a tag (style within link), which doesn't work.*/
+* {
+  box-sizing: border-box;
+}
+/* main page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    background-image: url("https://i.imgur.com/6XxLQkY.gif?noredirect");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+/* Nav Bar */
+  .nav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+    .nav a.active { 
+    background-color: #4c77af;
+    color: white;
+  } 
+
+/* Bootstrap */
+.container {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius:.25rem;
+}
+.row {
+  padding:2rem 1rem;
+margin-bottom:2rem;
+background-color:rgb(108, 118, 255); /* adds color */
+border-radius:.3rem
+}
+.col-sm-6 {
+  padding:2rem 1rem;
+margin-bottom:2rem;
+background-color:rgb(255, 255, 255);opacity:0.5;
+border-radius:.3rem
+}
+}

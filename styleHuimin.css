@@ -1,0 +1,44 @@
+/*  most of these styles are copied from the example website from assignment */
+body {
+    background: rgb(191, 228, 222);
+    background-image: url("media/darkwood.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    color: #111111;
+    font-weight: 500;
+}
+a {
+    font-weight: bold;
+}
+a:hover {
+    background-color: white;
+    border: 1px solid black;
+    width: 160px;
+    height: 80px
+}
+.outterDiv {
+    display: grid;
+    background-color: #8e9df1;
+}
+/*  copied from https://www.w3schools.com/css/css_align.asp */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statsContainera {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imgFlex {
+    display: flex;
+    flex: 1;
+}
+
+.tableFlex {
+    display: flex;
+    flex: 1;
+}

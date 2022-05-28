@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--Piper's page-->
+<html>
+    <head>
+        <!--The <head> element is a container for metadata and is placed between the <html> tag and the <body> tag-->
+            <title>A SAMPLE HTML PAGE OF PIPER</title>
+
+            <!--The <style> element is used to define style information for a single HTML page-->
+            <link rel="stylesheet" href="stylespiper.css">
+
+            <!--Link Bootstrap to the page-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+            <!-- Define styles for the page in the document (embeded stylesheet)-->
+            <style type="text/css">
+                .firstBox {
+                    border: 1px outset black;
+                    background-color: FloralWhite;
+                    text-align: center;
+                }
+            </style>
+    </head>
+
+    <body>
+        <!--Navigation bar to start-->
+        <div class="nav">
+            <a href="index.html">Home Page</a>
+            <a href="DylanPage.html">Dylan's Page</a>
+            <a href="Cable_test.html">Caleb's Page</a>
+            <a class="active" href="PiperPage.html">Piper's Page</a>
+            <a href="HuiminPage.html">Huimin's Page</a>
+        </div>
+
+        <!--A <div> section in a document that is styled with CSS:-->
+        <!--class container provides a responsive fixed width container -->
+        <div class="container">
+            <!-- class row is used to create horizontal groups of columns-->
+            <div class="row">
+                <!-- class col-6 is used to create gutters via padding with 6 cols per row-->
+                <div class="col-6">
+                    <!-- class header-intro is used to create style for the intro part-->
+                    <div class="header-intro">
+                        <p>Hello,</p>
+                        <p>I'm <span style="color: palevioletred"> <strong> Piper </strong> </span> </p>
+                    </div>
+                </div>
+
+                <!-- class col-6 is used to create gutters via padding with 6 cols per row-->
+                <div class="col-6">
+                    <div class="intro-image">
+                        <img src="https://drive.google.com/uc?export=view&id=1xYFvl05fjO8DG0JIdRXU9n57L0TiQI40" alt="Piper's picture" style="margin-right:15px" title="The picture of my portrait drawing" width="400" height="467">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- class header is used to style the tittle-->
+            <div class="header">
+                <p> ABOUT ME </p>
+            </div>
+                <div class="row">
+                        <div class="col">
+                            <!-- class body intro is used to style the second intro part-->
+                            <div class="body-intro">
+                            <p> I am a user experience designer with a computer science background in Seattle. I started my design journey as a self-taught graphic designer and created simple websites. At UW Bothell, I found my passion in creating interactive designs and satisfying user needs. I love connecting other people in the UX design industry and using my ability to contribute our society. </p>
+                            <p> My personal page: <a href="http://www.IamPhan.com"> IamPhan.com</a> </p>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <p> PROGRAMMING SKILLS </p>
+            </div>
+            <div class="row">
+                <div class="col">
+                <!-- class coding is used to style list-->
+                <div class="coding">
+                <!--The <ul> is for unordered list with bullets-->
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <p> CLASS SCHEDULE </p>
+            </div>
+            <div class="row">
+                <div class="col">
+                <!--The <table> tag allow us to arrange data into rows and columns. The <td> is for table cells. The <tr> is for rows. The <th> is for headers.-->
+                <table class="schedule">
+                    <thead>
+                        <tr>
+                            <th>Class Name</th>
+                            <th>Professor</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> BIMD 233 </td>
+                            <td> Dr Mark Chen</td>
+                            <td> Tuesday 5:54 - 7:45 PM</td>
+                        </tr>
+                        <tr>
+                            <td>BIMD 250</td>
+                            <td>Dr Dharma Dailey</td>
+                            <td>Tuesday, Thursday 3:30 - 5:30 PM </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <p> MY BUDDY </p>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="buddy-style">
+                <!--A <span> element which is used to color a part of a text -->
+                <!--The <strong> and <em> tags used for emphasizing parts of a text-->
+                <p> I have a cute little friend at home. </p>
+                <p> He is a hamster and his name is <span style="color: palevioletred"> <strong><em>Peanut</em></strong></span>.</p>
+                <!--The <ol> is for ordered list with numbers-->
+                <p style="color: rgb(62, 87, 168); font-weight: bold">His favorite food list:</p>
+                <ol>
+                    <li>Cheese</li>
+                    <li>Sunflower seeds</li>
+                    <li>Strawberry treat</li>
+                    <li>Apple</li>
+                </ol>
+                </div>
+                </div>
+                <div class="col-6">
+                <img src="https://drive.google.com/uc?export=view&id=16BRqjZZLeUGwwkgYzDBOkN6e03Gfi450" alt="Peanut's picture" title="The picture of Peanut, the Piper's hamster" width="310" height="400">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

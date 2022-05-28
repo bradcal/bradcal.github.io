@@ -1,0 +1,113 @@
+/*css style sheet for Caleb*/
+
+/*Make all columns (bootstrap) appear in a seperate box*/
+.col {
+  margin: 10px;
+  background: rgba(223, 223, 223, 0.8);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+/*apparently bootstrap has different classes for columns that are not uniform*/
+.col-lg-7 {
+  margin: 10px;
+  background: rgba(223, 223, 223, 0.8);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.col-lg-5 {
+  margin: 10px;
+  background: rgba(197, 165, 75, 0.8);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+/*Make row styles*/
+.row {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/*unique flexbox style*/
+.d-flex {
+  margin: 10px;
+  background: rgba(235, 128, 178, 0.8);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+/* Make headers a different font and red */
+h1 {
+  color: darkred;
+  font-weight: bold;
+  font-size: 42px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 6px;
+  margin-top: 8px;
+}
+
+h2 {
+  color: midnightblue;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+p {
+  color: midnightblue;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#highlight:hover {
+  font-size: 20px;
+  color:midnightblue;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+div {
+  color: midnightblue  ;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: midnightblue;
+  font-size: 14px;
+}
+
+li:hover {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aquamarine;
+  font-size: 16px;
+}
+
+td, th {
+  border: 1px solid;
+  border-color: rgb(199, 210, 219);
+  color:midnightblue;
+}
+
+.center {
+  text-align: center;
+  color: green;
+  font-family: "Impact", "Lucida Console", monospace;
+  font-size: 16px;
+}
+
+#caption {
+  font-size: 12px;
+  font-family: "Sans", "Courier New", monospace;
+  color:darkgray;
+}
+
+/* used opacity instead of visibility, because I found you cannot hover over hidden elements*/
+img {
+  opacity: 0;
+  height: max-content;
+  width: max-content;
+}
+
+img:hover {
+  opacity: 1;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--Caleb's page.-->
+<html>
+    <head>
+        <!--Updated title for assignment-->
+        <title>Caleb trying to learn bootstrap</title>
+
+        <!--Link CSS page (external stylesheet)-->
+        <link href="stylescaleb.css" rel="stylesheet">
+
+        <!--Link Bootstrap to the page-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Define styles for the page in the document (embeded stylesheet)-->
+        <style type="text/css">
+            body {
+                background-image: url("https://wallpapercave.com/wp/wp3158324.jpg");
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: 50%;
+            }
+        </style> 
+
+    </head>
+    <body>
+        <!--lets try making a nav bar to replace the old one-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Lucky 7</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="DylanPage.html">Dylan</a>
+                <a class="nav-item nav-link" href="Cable_test.html">Caleb</a>
+                <a class="nav-item nav-link" href="PiperPage.html">Piper</a>
+                <a class="nav-item nav-link" href="HuiminPage.html">Huimin</a>
+              </div>
+            </div>
+          </nav>
+        <!--I stole this piece from the sample HTML site lol, looks like it can link other pages-->
+        <!--<a href="index.html">Home Page</a> | <a href="DylanPage.html">Dylan's Page</a> | <a href="Cable_test.html">Caleb's Page</a> | <a href="PiperPage.html">Piper's Page</a> | <a href="HuiminPage.html">Huimin's Page</a>-->
+        <!--commented the line above out (old nav bar with html)-->
+        <h1>Caleb's HTML Page</h1>
+        <div id="caption">Now featuring CSS!</div>
+        <div class="row"> <!--First bootstrap row (2 columns)-->
+            <div class="col">
+                <h2>Who am I?</h2>
+                    <p>My name is Caleb, but my friends call me <strong id="highlight">Cable!</strong></p>
+                    <div>
+                        I am a student at UWB studying Interactive Media Design.
+                        This web design class is the only class I am taking this quarter, but
+                        I am also working and volunteering throughout my week!
+                    </div>
+            </div>
+            <div class="col">
+                <p><strong>Some things I enjoy doing are:</strong></p>
+                <ul>
+                    <li>Gaming</li>
+                    <li>Photography and videography</li>
+                    <li>Taking walks and jogs</li>
+                    <li>Trying new food</li>
+                    <li>Spending time with friends</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex">Y'all I found some cool text to write!</div>
+            <div class="d-flex ml-auto"> and some more weird text on the other side!</div>
+        </div>    
+        <div class="row">
+            <div class="col"> <!--full page stretch row (1 col)-->
+                <h2>What am I doing here?</h2>
+                <ol>
+                    <li>trying to learn how to make websites</li>
+                    <li>finishing my prerequisites to the IMD major</li>
+                    <li>gaining experience to use elsewhere</li>
+                </ol>
+            </div>
+        </div>
+        <div class="d-flex flex-row-reverse">I'm a flexbox container!</div>
+        <div class="row"> <!--practice non uniform col sizes-->
+            <div class="col-lg-7"> <!--takes 7 of 12 cols-->
+            <!--couldn't think of what to use a table for lol-->
+                <table style="width: 100%; border: 2px solid; border-color: black;">
+                    <tbody><tr>
+                        <td width="33.333333%">This is a table</td>
+                        <td width="33.333333%">I can make it 3 columns</td>
+                        <td width="33.333333%">Look another column</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="center">this is some text in a very large cell i think. it will be cool :)</p>
+                        </td>
+                        <td colspan="1">
+                            <p class="center">i can make it look all weird too lol</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">more text here that is very important. Maybe someday I'll know what to put here</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div class="col-lg-5"> <!--takes 5 of 12 cols-->
+                <p id="caption"><em>Here is a diagram of the areodynamics of a cow for your convenience (hover for cow jumpscare):</em></p>
+                <img src="https://external-preview.redd.it/2qxgN_b0DiuNVMHNk2iUrOCRXCzsbNosVaIjOTH2A40.jpg?auto=webp&s=216e1fc9a6e75e1f462992dc9beff85dbfb95418" alt="Cow Meme">
+            </div>
+            </div>
+    </body>
+</html>

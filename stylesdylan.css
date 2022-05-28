@@ -64,12 +64,10 @@ h1.flip-out p {
     color: white;
   } 
   /* Text */
-  p{
-    text-align: center;
-    font: bold;
-    font-size: medium;
-    color: rgb(255, 255, 255);
-  }
+p {
+    font-size: 96px;
+    padding-left: 180px;
+}
 /* Bootstrap */
 .container {
   position: relative;

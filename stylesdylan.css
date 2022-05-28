@@ -1,10 +1,43 @@
-/*Mark's comment: You don't need to nest this in a style tag so delete lines 1 and 77. The web browser will read the .html page line by line, get to the link tag and then include this file, continuing reading line by line, so including a style tag is sort of like putting a tag within a tag (style within link), which doesn't work.*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 * {
   box-sizing: border-box;
 }
 /* main page */
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  display: inline-block;
+  font-family: 'Noto Serif', serif;
+  font-size: 6rem;
+  --duration: 1s;
+  --stager: 10ms;
+}
+h1 p {
+  display: inline-block; 
+  animation-fill-mode: forwards;
+}
+
+h1.flip-in p {
+  animation: flipin var(--duration) ease-in calc(var(--i) * var(--stager)) 1;
+}
+
+h1.flip-out p {
+  animation: flipout var(--duration) ease-in calc(var(--j) * var(--stager)) 1;
+}
+
+
+@keyframes flipout {
+  100% {
+    transform: rotateX(360deg);
+  }  
+}
+
+@keyframes flipin {
+  100% {
+    transform: rotateX(360deg);
+  }  
 }
 
 .main{

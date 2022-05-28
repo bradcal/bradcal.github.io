@@ -70,10 +70,10 @@ h1.flip-out p {
     background-color: #4c77af;
     color: white;
   } 
-  .h2{
+  h2{
     font: ;
     font-size: medium;
-    color: white;
+    color: rgb(255, 255, 255);
   }
 
 /* Bootstrap */

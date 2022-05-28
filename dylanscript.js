@@ -1,3 +1,4 @@
-function press(){
-    document.getElementById("demo").innerHTML = "It's Morbin' Time";
-}
+function displaySong1() {
+    var p = document.getElementById("paragraph");
+    p.style.display = "block";  	 
+  }

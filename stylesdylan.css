@@ -25,8 +25,7 @@ h1.flip-in p {
 h1.flip-out p {
   animation: flipout var(--duration) ease-in calc(var(--j) * var(--stager)) 1;
 }
-
-
+/* Keyframe */
 @keyframes flipout {
   100% {
     transform: rotateX(360deg);

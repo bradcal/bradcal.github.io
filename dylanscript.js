@@ -1,7 +1,9 @@
+  //Button
 function press() {
     var p = document.getElementById("paragraph");
     p.style.display = "block";  	 
   }
+  //Animation
   (() => {
     const h1El = document.querySelector('h1');
     const letters = h1El.textContent.split('');

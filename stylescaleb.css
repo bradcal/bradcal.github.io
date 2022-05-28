@@ -9,7 +9,7 @@
 }
 
 /*apparently bootstrap has different classes for columns that are not uniform*/
-.col-lg-7 {
+.col-lg-6 {
   margin: 10px;
   background: rgba(223, 223, 223, 0.8);
   border-radius: 10px;

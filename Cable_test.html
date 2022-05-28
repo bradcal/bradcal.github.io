@@ -3,13 +3,16 @@
 <html>
     <head>
         <!--Updated title for assignment-->
-        <title>Caleb trying to learn bootstrap</title>
+        <title>Caleb trying to learn javascript</title>
 
         <!--Link CSS page (external stylesheet)-->
         <link href="stylescaleb.css" rel="stylesheet">
 
         <!--Link Bootstrap to the page-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--Link JS pages-->
+        <script src="cable1.js"></script>
 
         <!-- Define styles for the page in the document (embeded stylesheet)-->
         <style type="text/css">
@@ -42,15 +45,14 @@
         <!--<a href="index.html">Home Page</a> | <a href="DylanPage.html">Dylan's Page</a> | <a href="Cable_test.html">Caleb's Page</a> | <a href="PiperPage.html">Piper's Page</a> | <a href="HuiminPage.html">Huimin's Page</a>-->
         <!--commented the line above out (old nav bar with html)-->
         <h1>Caleb's HTML Page</h1>
-        <div id="caption">Now featuring CSS!</div>
+        <div id="caption">Now featuring CSS and JS!</div>
         <div class="row"> <!--First bootstrap row (2 columns)-->
             <div class="col">
                 <h2>Who am I?</h2>
                     <p>My name is Caleb, but my friends call me <strong id="highlight">Cable!</strong></p>
                     <div>
-                        I am a student at UWB studying Interactive Media Design.
-                        This web design class is the only class I am taking this quarter, but
-                        I am also working and volunteering throughout my week!
+                        <p id="AboutMe">Click the button below to learn more about me!</p>  
+                        <button type="button" onclick="revealAboutMe()">Click me!</button>
                     </div>
             </div>
             <div class="col">
@@ -80,8 +82,7 @@
         </div>
         <div class="d-flex flex-row-reverse">I'm a flexbox container!</div>
         <div class="row"> <!--practice non uniform col sizes-->
-            <div class="col-lg-7"> <!--takes 7 of 12 cols-->
-            <!--couldn't think of what to use a table for lol-->
+            <div class="col-lg-6"> <!--takes 6 of 11 cols?-->
                 <table style="width: 100%; border: 2px solid; border-color: black;">
                     <tbody><tr>
                         <td width="33.333333%">This is a table</td>
@@ -101,10 +102,10 @@
                     </tr>
                 </tbody></table>
             </div>
-            <div class="col-lg-5"> <!--takes 5 of 12 cols-->
+            <div class="col-lg-5"> <!--takes 5 of 11 cols-->
                 <p id="caption"><em>Here is a diagram of the areodynamics of a cow for your convenience (hover for cow jumpscare):</em></p>
                 <img src="https://external-preview.redd.it/2qxgN_b0DiuNVMHNk2iUrOCRXCzsbNosVaIjOTH2A40.jpg?auto=webp&s=216e1fc9a6e75e1f462992dc9beff85dbfb95418" alt="Cow Meme">
             </div>
-            </div>
+        </div>
     </body>
 </html>

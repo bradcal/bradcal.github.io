@@ -45,7 +45,7 @@
         <!--<a href="index.html">Home Page</a> | <a href="DylanPage.html">Dylan's Page</a> | <a href="Cable_test.html">Caleb's Page</a> | <a href="PiperPage.html">Piper's Page</a> | <a href="HuiminPage.html">Huimin's Page</a>-->
         <!--commented the line above out (old nav bar with html)-->
         <h1>Caleb's HTML Page</h1>
-        <div id="caption">Now featuring CSS and JS!</div>
+        <div class="caption">Now featuring CSS and JS!</div>
         <div class="row"> <!--First bootstrap row (2 columns)-->
             <div class="col">
                 <h2>Who am I?</h2>
@@ -103,9 +103,18 @@
                 </tbody></table>
             </div>
             <div class="col-lg-5"> <!--takes 5 of 11 cols-->
-                <p id="caption"><em>Here is a diagram of the areodynamics of a cow for your convenience (hover for cow jumpscare):</em></p>
+                <p class="caption"><em>Here is a diagram of the areodynamics of a cow for your convenience (hover for cow jumpscare):</em></p>
                 <img src="https://external-preview.redd.it/2qxgN_b0DiuNVMHNk2iUrOCRXCzsbNosVaIjOTH2A40.jpg?auto=webp&s=216e1fc9a6e75e1f462992dc9beff85dbfb95418" alt="Cow Meme">
             </div>
+        </div>
+        <div class="col">
+            <p id="counter">0</p>
+            <button onclick="countUp()">Click to count to 10!</button>
+        </div>
+        <div class="col">
+            <!--does not pick a random food, just rigged lol-->
+            <p>A long list of foods: </p> <p id="picker"></p>
+            <button onclick="pickFood()">Click to make a list that always ends with cheese</button>
         </div>
     </body>
 </html>

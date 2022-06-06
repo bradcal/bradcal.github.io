@@ -23,7 +23,7 @@
                   <a class="nav-link" href="DylanPage.html">Dylan's Page</a>
                   <a class="nav-link" href="Cable_test.html">Caleb's Page</a>
                   <a class="nav-link" href="PiperPage.html">Piper's Page</a>
-                  <a class="nav-link" href="HuiminPage.html">Huimin's Page</a>
+                  <a class="nav-link active" href="HuiminPage.html">Huimin's Page</a>
                 </div>
             </div>
         </nav>
@@ -75,6 +75,7 @@
 
                 <div id="puppySuggestions"/>
             </div>
+            <button/>
             
 
             <p> Thank you for watching!</p>
@@ -85,8 +86,8 @@
 
             /* these subtitels will be show ahead of each prapgrahs */
             let subtitles = [
-                "What to prepare before your puppy",
-                "First night for your puppy",
+                "What to prepare before picking up your puppy",
+                "Puppy's first day at your home",
                 "House training",
                 "Vaccines",
                 "Train your puppy"
@@ -99,10 +100,10 @@
                  Puppy would be nervous the first time you drive home, so putting puppy into the crate is actually a GOOD thing.
                  Puppy feels safe in a tight space, if you throws puppy some treats, puppy would know crate is safe and has food!
                 `,
-                `Your first night with puppy woul be rough, because puppy needs to pee every 1/2 hours, you can't lock the puppy into crate
-                thats where the fence comes in, you could fence around the puppy and let crate door open. Your puppy might have separation anxiation,
-                my experience has been throwing significant amount of treats into crate and maybe a toy into it to keep puppy busy and eventually tire out.
-                At that momement, anxiery is gone. If you're lucky, your puppy will sleep through the night.
+                `Your first day with puppy woul be rough, because puppy needs to pee every 1/2 hours, you can't lock the puppy into crate
+                thats where the fence comes in, you could fence around the puppy and let crate door open. Your puppy might have separation annexatiy,
+                my experience has been throwing significant amount of treats into crate and maybe a toy into it to keep puppy busy and eventually tire him/her out.
+                At that momement, annexaty is gone. If you're lucky(depends on how tired the puppy is), your puppy will sleep through the first night.
                 `,
                 ` House training should be done ASAP, pee pads only works for small breed, but house still stinks even for small amount of urine.
                 My suggestion is to take the puppy out every one hour, on leash, if the puppy pees/poops, rewards puppy nicely and go back to home.
@@ -118,9 +119,16 @@
                 But I didn't give up. For some amount of work, your workload should be less and less, eventually come to good dog.
                 I fully believe bad dog = bad owner, therefore it's a lot of responsbility to train dog so they can go outside and meet people
                 `
-
             ];
     
+            // copied from https://www.codegrepper.com/code-examples/css/odd+even+number+in+javascript+w3schools
+            function isEven(numbers) {
+                if (numbers % 2 == 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
     
             /* The next line tells the script that you're going to define a function or a command you want it to execute whenever you invoke the keyword or name that you're giving the function. In this case, we're giving the function the name "showCalendar." The "(month, year)" part tells the script to expect us to provide those two bits of info when we tell it to execute showPuppySuggestions. */
             function showPuppySuggestions() {
@@ -134,6 +142,10 @@
                     parapgrah.appendChild(document.createTextNode(paragraphs[i]));
                     puppySuggestions.appendChild(subtitleHeader);
                     puppySuggestions.appendChild(parapgrah);
+                    if (isEven(i)) {
+                        let horizontalLine = document.createElement("hr");
+                        puppySuggestions.appendChild(horizontalLine);
+                    }
                 }
             }
     

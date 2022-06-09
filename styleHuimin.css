@@ -11,8 +11,15 @@ body {
 a {
     font-weight: bold;
 }
-a:hover {
-    background-color: white;
+
+/*  copied from https://www.w3schools.com/howto/howto_js_active_element.asp */
+.active {
+    background-color: rgb(232, 170, 170);
+    color: white;
+}
+
+ a:hover {
+    background-color: grey;
     border: 1px solid black;
     width: 160px;
     height: 80px

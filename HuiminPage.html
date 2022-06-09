@@ -23,7 +23,7 @@
                   <a class="nav-link" href="DylanPage.html">Dylan's Page</a>
                   <a class="nav-link" href="Cable_test.html">Caleb's Page</a>
                   <a class="nav-link" href="PiperPage.html">Piper's Page</a>
-                  <a class="nav-link" href="HuiminPage.html">Huimin's Page</a>
+                  <a class="nav-link active" href="HuiminPage.html">Huimin's Page</a>
                 </div>
             </div>
         </nav>
@@ -48,7 +48,7 @@
                     <li>She follows me around all day and we play a lot in backyard</li>
                 </ul> 
             </div>
-            <div class="statsContainera">
+            <div class="statsContainera" id="jsTableContainer">
                 <div class="tableFlex">
                     <table class = "table">
                         <tr>
@@ -70,9 +70,88 @@
                 </div>
             </div>
 
+            <div class="row">
+                <h2>New Puppy suggestions</h2>
+
+                <div id="puppySuggestions"/>
+            </div>
+            <button/>
+            
+
             <p> Thank you for watching!</p>
         </div>        
+        <script>
+            /** copied from view-source:https://markdangerchen.github.io/samplejs.html, but I changed it to append paragraphs
+             * instead of creaging a table */
 
+            /* these subtitels will be show ahead of each prapgrahs */
+            let subtitles = [
+                "What to prepare before picking up your puppy",
+                "Puppy's first day at your home",
+                "House training",
+                "Vaccines",
+                "Train your puppy"
+            ];
+
+            let paragraphs = [
+                `You should prepare a crate with comfortable mattess inside, some pee pads, some treats and leash and a fence.
+                 The pee pads for useful because puppy doesn't know where to pee&poop, the pee pads has some substancles to attract dog to pee on it.
+                 once the dog pees on it, he/she would comes back the next time.
+                 Puppy would be nervous the first time you drive home, so putting puppy into the crate is actually a GOOD thing.
+                 Puppy feels safe in a tight space, if you throws puppy some treats, puppy would know crate is safe and has food!
+                `,
+                `Your first day with puppy woul be rough, because puppy needs to pee every 1/2 hours, you can't lock the puppy into crate
+                thats where the fence comes in, you could fence around the puppy and let crate door open. Your puppy might have separation annexatiy,
+                my experience has been throwing significant amount of treats into crate and maybe a toy into it to keep puppy busy and eventually tire him/her out.
+                At that momement, annexaty is gone. If you're lucky(depends on how tired the puppy is), your puppy will sleep through the first night.
+                `,
+                ` House training should be done ASAP, pee pads only works for small breed, but house still stinks even for small amount of urine.
+                My suggestion is to take the puppy out every one hour, on leash, if the puppy pees/poops, rewards puppy nicely and go back to home.
+                When arrived at home, unleash the puppy as another rewards. Puppy learn the reward process well, so puppy will actually hold the pee
+                until next time out.
+                `,
+                `Vaccines are needed for puppy, puppy should be taken to vet in first few days for check up and vet would recommend a vaccine schedule.
+                Rabi vaccine is must have for puppy. 
+                I found the vet price is a lot cheaper in suburban than city, it's could be 50% difference, might be worth the drive`,
+                `Training puppy takes a lot of time, but the rule of thumb has been rewarding when puppy action well, reward at the time of action.
+                For example, puppy pees at the right place - rewards generously. 
+                It could be somestimes tough to train puppy, it takes consistency to train, for my first month I was really occupied with training.
+                But I didn't give up. For some amount of work, your workload should be less and less, eventually come to good dog.
+                I fully believe bad dog = bad owner, therefore it's a lot of responsbility to train dog so they can go outside and meet people
+                `
+            ];
+    
+            // copied from https://www.codegrepper.com/code-examples/css/odd+even+number+in+javascript+w3schools
+            function isEven(numbers) {
+                if (numbers % 2 == 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+    
+            /* The next line tells the script that you're going to define a function or a command you want it to execute whenever you invoke the keyword or name that you're giving the function. In this case, we're giving the function the name "showCalendar." The "(month, year)" part tells the script to expect us to provide those two bits of info when we tell it to execute showPuppySuggestions. */
+            function showPuppySuggestions() {
+
+                let puppySuggestions = document.getElementById("puppySuggestions");
+
+                for (let i =0; i < subtitles.length; i++) {
+                    let subtitleHeader = document.createElement("h3");
+                    subtitleHeader.appendChild(document.createTextNode(subtitles[i]));
+                    let parapgrah = document.createElement("p");
+                    parapgrah.appendChild(document.createTextNode(paragraphs[i]));
+                    puppySuggestions.appendChild(subtitleHeader);
+                    puppySuggestions.appendChild(parapgrah);
+                    if (isEven(i)) {
+                        let horizontalLine = document.createElement("hr");
+                        puppySuggestions.appendChild(horizontalLine);
+                    }
+                }
+            }
+    
+            /* Finally, after declaring variables and functions, let's execute the function */
+            showPuppySuggestions();
+        </script>
     </body>
  </html>   
 

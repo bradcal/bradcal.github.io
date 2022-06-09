@@ -11,6 +11,9 @@
             <!--Link Bootstrap to the page-->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+            <!--Link JS pages-->
+            <script src="Piper.js"></script>
+
             <!-- Define styles for the page in the document (embeded stylesheet)-->
             <style type="text/css">
                 .firstBox {
@@ -142,6 +145,23 @@
                 <div class="col-6">
                 <img src="https://drive.google.com/uc?export=view&id=16BRqjZZLeUGwwkgYzDBOkN6e03Gfi450" alt="Peanut's picture" title="The picture of Peanut, the Piper's hamster" width="310" height="400">
                 </div>
+            </div>
+        <div class="container">
+                <div class="header">
+                    <p> MY FAVORITE </p>
+                </div>
+                <div class="row">
+                    <div class="buddy-style">
+                        <!--call out id-->
+                        <p id="counter">My Favorite Boba Tea Brand: </p>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="buddy-style">
+                            <!--event button to print out drink item-->
+                            <button onclick="listItem()">Click to find out!</button>
+                        </div>
+                    </div>
             </div>
         </div>
     </body>
